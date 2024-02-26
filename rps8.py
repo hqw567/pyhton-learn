@@ -9,15 +9,14 @@ class RPS(Enum):
     SCISSORS = 3
 
 
-print("Welcome to Rock, Paper, Scissors!\n")
+def rps():
 
-
-def rps(name="Player"):
     game_count = 0
     user_win_count = 0
     computer_win_count = 0
 
-    def play_rps():
+    def play_rps(name="Player"):
+        print("Welcome to Rock, Paper, Scissors!\n")
         while True:
             playerchoice = input(
                 f"{name}, Enter your choice: \n1. Rock\n2. Paper\n3. Scissors\n\n"
@@ -57,7 +56,10 @@ def rps(name="Player"):
                 playagain = input("Enter q to quit or any other key to play again: ")
                 if playagain.lower() == "q":
                     print("Thanks for playing!")
-                    sys.exit(f"{name}, Goodbye!")
+                    if __name__ == "__main__":
+                        sys.exit(f"{name}, Goodbye!")
+                    else:
+                        break
             else:
                 print("Invalid choice")
                 play_rps()
@@ -79,4 +81,4 @@ if __name__ == "__main__":
         help="The name of the player",
     )
     args = parser.parse_args()
-    rps(args.name)()
+    play_game(args.name)
