@@ -5,37 +5,37 @@
 #     continue
 #   print(value)
 # else:
-#   print("Loop ended " + str(value))  
+#   print("Loop ended " + str(value))
 
 
 names = ["John", "Paul", "George", "Ringo"]
 for name in names:
-  if name == "George":
-    continue
-  print(name)
+    if name == "George":
+        continue
+    print(name)
 
 
 for i in "Mississippi":
-  print(i)
+    print(i)
 
 for name in names:
-  if name == "Paul":
-    break
-  print(name)
+    if name == "Paul":
+        break
+    print(name)
 
 
 for i in range(10, 20, 5):
-  print(i)
+    print(i)
 else:
-  print("Loop ended " + str(i))
+    print("Loop ended " + str(i))
 
 names = ["John", "Paul", "George", "Ringo"]
 actions = ["singing", "playing guitar", "playing bass", "playing drums"]
 
 for name in names:
-  for action in actions:
-    print(name + " is " + action)
-  print("\n")
+    for action in actions:
+        print(name + " is " + action)
+    print("\n")
 
 # for name, action in zip(names, actions):
 #   print(name + " is " + action)

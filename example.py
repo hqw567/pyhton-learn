@@ -6,5 +6,5 @@ while value:
     if count > 10:
         break
     else:
-      value = 0
-      continue
+        value = 0
+        continue

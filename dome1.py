@@ -1,7 +1,7 @@
-mylist = list([1,'Herway',True])
+mylist = list([1, "Herway", True])
 print(mylist)
 
-p = (1,3,3,4,5)
+p = (1, 3, 3, 4, 5)
 print(p)
 
 newList = list(mylist)
@@ -9,8 +9,8 @@ newList.append(6)
 print(newList)
 print(mylist)
 
-print('-----------------')
-(one, *two, three,hey) = p
+print("-----------------")
+(one, *two, three, hey) = p
 print(one)
 print(two)
 print(hey)

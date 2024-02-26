@@ -1,5 +1,8 @@
-name = 'Herway'
+name = "Herway"
+
 
 def scope_test(name):
     print(name)
-scope_test('1')
+
+
+scope_test("1")
